@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для заполнения данных</title>
+    <link rel="stylesheet" href="./seo-loading.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Клиторчук Кал Калыч</h2>
+
+        <div class="form-row">
+            <span>Количество проектов</span>
+            <input type="number" id="projects-input" class="input-field" min="0" max="100" value="0">
+        </div>
+
+        <div class="form-row">
+            <span>Качество работы</span>
+            <input type="range" id="quality-slider" class="range-slider" min="0" max="100" value="100" disabled>
+        </div>
+
+        <div class="form-row">
+            <span>Вероятность потери проекта</span>
+            <input type="range" id="loss-slider" class="range-slider" min="0" max="100" value="0" disabled>
+        </div>
+
+        <div class="form-row">
+            <span>Вероятность выгорания</span>
+            <input type="range" id="burnout-slider" class="range-slider" min="0" max="100" value="0" disabled>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
