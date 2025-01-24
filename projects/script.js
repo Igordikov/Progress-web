@@ -44,6 +44,10 @@ function updateSliders() {
     }
 
     // Устанавливаем значения ползунков
+    qualitySlider.style.transition = 'all 1s ease';
+    lossSlider.style.transition = 'all 1s ease';
+    burnoutSlider.style.transition = 'all 1s ease';
+
     qualitySlider.value = quality.toFixed(0);
     lossSlider.value = lossProbability.toFixed(0);
     burnoutSlider.value = burnoutProbability.toFixed(0);
